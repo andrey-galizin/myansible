@@ -1,0 +1,12 @@
+all:
+  children:
+    armservers:
+      hosts:
+        rockpi:
+          ansible_host: rockpi
+        nanopi:
+          ansible_host: nanopi
+    amd64servers:
+      hosts:
+        agxeon:
+          ansible_host: agxeon
