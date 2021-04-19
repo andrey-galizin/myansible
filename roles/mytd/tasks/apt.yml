@@ -1,11 +1,8 @@
 ---
 # tasks file for mytd
-- name: Installing mc
+- name: Installing nginx
   apt: 
-    name: mc
+    name: nginx
     state: latest
-- name: Uninstalling mc
-  apt: 
-    name: mc
-    state: absent
+
     
