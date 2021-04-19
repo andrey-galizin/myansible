@@ -1,0 +1,5 @@
+[servers]
+nanopi ansible_host=nanopi
+agxeon ansible_host=agxeon
+
+

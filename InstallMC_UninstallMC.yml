@@ -1,0 +1,11 @@
+---
+- hosts: all
+  tasks:
+  - name: Install mc
+    apt: name=mc state=latest
+    become: yes
+    become_method: sudo
+  - name: Uninstall mc
+    apt: name=mc state=absent
+    become: yes
+    become_method: sudo

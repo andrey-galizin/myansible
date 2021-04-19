@@ -1,0 +1,11 @@
+---
+# tasks file for mytd
+- name: Installing mc
+  apt: 
+    name: mc
+    state: latest
+- name: Uninstalling mc
+  apt: 
+    name: mc
+    state: absent
+    
