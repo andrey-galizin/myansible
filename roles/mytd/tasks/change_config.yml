@@ -1,0 +1,5 @@
+---
+- name: change_config
+  import_tasks: copy_config.yml
+  notify:
+    - restart nginx

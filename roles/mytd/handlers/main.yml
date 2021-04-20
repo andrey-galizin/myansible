@@ -1,2 +1,5 @@
 ---
-# handlers file for mytd
+- name: restart nginx
+  service:
+    name: "nginx"
+    state: restarted
