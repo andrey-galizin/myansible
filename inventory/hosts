@@ -3,10 +3,13 @@ all:
     armservers:
       hosts:
         rockpi:
-          ansible_host: rockpi
+          ansible_host: 192.168.211.41 # rockpi
+          ansible_user: ansible
         nanopi:
-          ansible_host: nanopi
+          ansible_host: 192.168.211.43 # nanopi
+          ansible_user: ansible
     amd64servers:
       hosts:
         agxeon:
-          ansible_host: agxeon
+          ansible_host: 192.168.211.40 # agxeon
+          ansible_user: ansible
