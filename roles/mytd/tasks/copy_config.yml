@@ -1,7 +1,8 @@
 ---
-- name: copy template to conf
-  src: template/nginx_default_config.j2 
-  dest: /etc/nginx/conf/nginx.conf
-  owner: "root"
-  group: "root"
-  mode: 0644
+- name: add application config
+  template:
+    src: nginx_default_config.j2
+    dest: /etc/nginx/sites-available/default
+    owner: root
+    group: root
+    mode: 0644

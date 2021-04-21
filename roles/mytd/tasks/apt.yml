@@ -4,5 +4,4 @@
   apt: 
     name: nginx
     state: latest
-
-    
+- import_tasks: change_config.yml

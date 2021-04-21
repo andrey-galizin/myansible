@@ -1,5 +1,7 @@
 ---
 - hosts: armservers
+  vars:
+    nginx_port: 8004
   become: yes
   become_user: root
   roles:
