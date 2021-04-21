@@ -1,14 +1,5 @@
 ---
-- name: install_nginx | Install nginx
-  apt: 
-    name: nginx
-    state: latest
-- name: copy_config | Copy template to conf
-  template:
-    src: ng_conf.j2
-    dest: /etc/nginx/sites-available/default
-    owner: root
-    group: root
-    mode: 0644
-  notify: restart_nginx
+- name: install_nginx | Install and Configure Nginx on Ubuntu
+  include_tasks: nginx.yml
+
 
