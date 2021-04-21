@@ -1,10 +1,11 @@
-- name: Installing nginx
+---
+- name: install_nginx | Install nginx
   apt: 
     name: nginx
     state: latest
-- name: add application config
+- name: copy_config | Copy template to conf
   template:
-    src: nginx_default_config.j2
+    src: ng_conf.j2
     dest: /etc/nginx/sites-available/default
     owner: root
     group: root
