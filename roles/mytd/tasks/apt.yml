@@ -1,7 +1,0 @@
----
-# tasks file for mytd
-- name: Installing nginx
-  apt: 
-    name: nginx
-    state: latest
-- import_tasks: change_config.yml

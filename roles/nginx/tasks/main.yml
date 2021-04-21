@@ -1,4 +1,7 @@
----
+- name: Installing nginx
+  apt: 
+    name: nginx
+    state: latest
 - name: add application config
   template:
     src: nginx_default_config.j2
@@ -6,3 +9,5 @@
     owner: root
     group: root
     mode: 0644
+  notify: restart_nginx
+
