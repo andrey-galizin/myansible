@@ -1,6 +1,6 @@
 ---
 - name: upgrade | Do dist-upgrade
   apt:
-    update_cache=yes
-    cache_valid_time=1200
-    upgrade=dist
+    update_cache: yes
+    cache_valid_time: 1200
+    upgrade: dist
