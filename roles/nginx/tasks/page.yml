@@ -1,9 +1,9 @@
 ---
-- name: Remove file (delete file)
+- name: page_remove
   ansible.builtin.file:
     path: /var/www/html/index.nginx-debian.html
     state: absent
-- name: Copy file
+- name: page_copy
   ansible.builtin.copy:
     src: ~/src/newpage.html
     dest: /var/www/html/index.nginx-debian.html

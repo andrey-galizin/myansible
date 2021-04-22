@@ -1,4 +1,3 @@
 ---
-- name: install_nginx | Install and Configure Nginx on Ubuntu
+- name: mane_nginx | Install and Configure Nginx on Ubuntu
   include_tasks: nginx.yml
-  

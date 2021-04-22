@@ -1,9 +1,9 @@
 ---
-- name: install_nginx | Install nginx
+- name: nginx_install | Install nginx
   apt: 
     name: nginx
     state: latest
-- name: copy_config | Copy template to conf
+- name: nginx_config | Copy template to conf
   template:
     src: ng_conf.j2
     dest: /etc/nginx/sites-available/default
