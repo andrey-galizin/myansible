@@ -1,8 +1,10 @@
 ---
 - hosts: armservers
+
   vars:
     nginx_port: 8015
+
   become: yes
-  become_user: root
+
   roles:
     - role: nginx

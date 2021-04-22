@@ -1,9 +1,10 @@
 ---
-- name: nginx_install | Install nginx
+- name: nginx | Install nginx
   apt: 
     name: nginx
     state: latest
-- name: nginx_config | Copy template to conf
+
+- name: nginx | Copy template to conf
   template:
     src: ng_conf.j2
     dest: /etc/nginx/sites-available/default
@@ -11,5 +12,5 @@
     group: root
     mode: 0644
   notify: restart_nginx
-- import_tasks: page.yml
+
 
