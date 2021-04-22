@@ -1,0 +1,12 @@
+---
+- name: page | Remove default page
+  ansible.builtin.file:
+    path: /var/www/html/index.nginx-debian.html
+    state: absent
+
+- name: page | Copy new page
+  ansible.builtin.copy:
+    src: ~/src/newpage.html
+    dest: /var/www/html/index.nginx-debian.html
+    owner: root
+    group: root
